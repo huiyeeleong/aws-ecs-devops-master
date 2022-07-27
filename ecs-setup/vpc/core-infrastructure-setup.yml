@@ -3,7 +3,7 @@ Description: VPC and subnets as base for an ECS cluster
 Parameters:
   EnvironmentName:
     Type: String
-    Default: ecs-course
+    Default: hui-ecs
 
 Mappings:
   SubnetConfig:

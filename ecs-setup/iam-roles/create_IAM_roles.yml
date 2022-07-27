@@ -3,7 +3,7 @@ Description: create IAM roles for ECS usage upfront
 Parameters:
   EnvironmentName:
     Type: String
-    Default: ecs-course
+    Default: hui-ecs
     Description: "A name that will be used for namespacing all cluster resources."
 
 Resources:
