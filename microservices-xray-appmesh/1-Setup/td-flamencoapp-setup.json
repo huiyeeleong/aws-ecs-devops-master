@@ -1,0 +1,29 @@
+{
+    "taskRoleArn": "arn:aws:iam::977994766438:role/ecsTaskRole",
+    "executionRoleArn": "arn:aws:iam::977994766438:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "environment": [
+                {
+                    "name": "PORT",
+                    "value": "9001"
+                }
+            ],
+            "memory": 128,
+            "image": "pauloclouddev/flamencoapp:latest",
+            "essential": true,
+            "portMappings": [
+                {
+                    "protocol": "tcp",
+                    "containerPort": 9001
+                }
+            ],
+            "name": "flamencoapp"
+        }
+    ],
+    "family": "td-flamencoapp",
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": "awsvpc"
+}
